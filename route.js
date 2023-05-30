@@ -8,7 +8,7 @@ axios = axios.create({
 });
 
 // here we create our Route
-router.post("/like", async (req, res) => {
+router.post("/onedoor/like", async (req, res) => {
   try {
     const { item_id, token, like } = req.body;
     console.log(req.body);
@@ -132,7 +132,7 @@ router.post("/like", async (req, res) => {
   }
 });
 
-router.get("/getlike", async (req, res) => {
+router.get("/onedoor/getlike", async (req, res) => {
   try {
     let getUrl;
     console.log("called", req.query);
@@ -160,7 +160,7 @@ router.get("/getlike", async (req, res) => {
   }
 });
 
-router.post("/comment", async (req, res) => {
+router.post("/onedoor/comment", async (req, res) => {
   try {
     const { item_id, token, comment } = req.body;
     console.log(req.body);
@@ -238,7 +238,7 @@ router.post("/comment", async (req, res) => {
   }
 });
 
-router.get("/getcomment", async (req, res) => {
+router.get("/onedoor/getcomment", async (req, res) => {
   try {
     let getUrl;
     console.log("called", req.query);
